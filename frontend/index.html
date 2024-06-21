@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reactive IoT Light Controller</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.8.1/rxjs.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Reactive IoT Light Controller</h1>
+        </header>
+        <main>
+            <button id="toggleBtn" class="toggle-btn">Turn On</button>
+            <div class="status">
+                <h2>Command Status</h2>
+                <ul id="statusList"></ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
+ 
